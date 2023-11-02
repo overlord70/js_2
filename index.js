@@ -281,13 +281,13 @@ let findedCar = cars.find((item) => item === oneOfThem)
 let answer = confirm(`Do you want to buy: ${oneOfThem}`)
 if(answer === true){
     let money = prompt('Please pay')
-    if(money <= item.price ){
+    if(money < oneOfThem.price ){
         alert('You need more money.' )
-    }else if (money >= item.price){
+    }else if (money > oneOfThem.price){
         let your_debt = []
-        your_debt = money - item.price  
+        your_debt = money - oneOfThem.price  
         alert('Okay,thanks')
-    }else if(money === item.price){
+    }else if(money === oneOfThem.price){
         alert('Everything is ok')
     }
 }
