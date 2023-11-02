@@ -203,6 +203,6 @@ tech_passport: {
     }
 ]
 let current_year = 2023
-if(current_year - cars.year >= 2){
+if(current_year - cars.year <= 2){
     console.log(cars)
 }
