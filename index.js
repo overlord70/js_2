@@ -278,7 +278,7 @@ cars.forEach(car => {
 
 let oneOfThem = prompt('По вашей ценовой категории найдено вот эти машины ' + result + " Выберите один из этого списка написав название машины" )
 let findedCar = cars.find((item) => item === oneOfThem)
-let answer = confirm(`Do you want to buy: ${findedCar}`)
+let answer = confirm(`Do you want to buy: ${oneOfThem}`)
 if(answer === true){
     let money = prompt('Please pay')
     if(money <= item.price ){
